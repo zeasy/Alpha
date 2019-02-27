@@ -10,4 +10,7 @@
 
 @implementation NSBundle (Yzt)
 
+-(BOOL) isSpringBoard {
+    return [@"com.apple.springboard" isEqualToString:self.infoDictionary[@"CFBundleIdentifier"]];
+}
 @end

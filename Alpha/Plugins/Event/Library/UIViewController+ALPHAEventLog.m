@@ -12,11 +12,15 @@
 
 #import "UIViewController+ALPHAEventLog.h"
 #import "ALPHAEventSource.h"
+#import "NSBundle+Yzt.h"
 
 @implementation UIViewController (ALPHAEventLog)
 
 + (void)load
 {
+    if ([[NSBundle mainBundle] isSpringBoard]) {
+        return;
+    }
     [UIViewController alpha_swizzleInstanceMethod:@selector(viewDidAppear:) withMethod:@selector(alpha_viewDidAppear:)];
     [UIViewController alpha_swizzleInstanceMethod:@selector(viewDidDisappear:) withMethod:@selector(alpha_viewDidDisappear:)];
 }

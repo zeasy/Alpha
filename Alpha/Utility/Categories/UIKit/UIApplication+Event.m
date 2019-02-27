@@ -8,6 +8,7 @@
 
 #import "UIApplication+Event.h"
 #import "NSObject+Swizzle.h"
+#import "NSBundle+Yzt.h"
 
 NSString* const ALPHAShakeMotionNotification = @"kALPHAShakeMotionNotification";
 NSString* const ALPHAInterfaceEventNotification = @"kALPHAInterfaceEventNotification";
@@ -16,6 +17,9 @@ NSString* const ALPHAInterfaceEventNotification = @"kALPHAInterfaceEventNotifica
 
 + (void)load
 {
+    if ([[NSBundle mainBundle] isSpringBoard]) {
+        return;
+    }
     [UIApplication alpha_swizzleInstanceMethod:@selector(sendEvent:) withMethod:@selector(alpha_sendEvent:)];
 }
 

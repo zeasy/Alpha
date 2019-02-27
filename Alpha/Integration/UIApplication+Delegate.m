@@ -13,17 +13,22 @@
 #import "UIApplication+Delegate.h"
 #import "ALPHAApplicationDelegate.h"
 #import "ALPHAManager.h"
+#import "NSBundle+Yzt.h"
 
 @implementation UIApplication (Delegate)
 
-+ (void)load
-{
+//+ (void)load
+//{
     //
     // Swizzle delegate methods, to hide Alpha's delegation injection
     //
     
-    [UIApplication alpha_swizzleInstanceMethod:@selector(setDelegate:) withMethod:@selector(alpha_setDelegate:)];
-}
+//    if ([[NSBundle mainBundle] isSpringBoard]) {
+//        return;
+//    }
+    
+    //[UIApplication alpha_swizzleInstanceMethod:@selector(setDelegate:) withMethod:@selector(alpha_setDelegate:)];
+//}
 
 - (id)alpha_injectedDelegate
 {
