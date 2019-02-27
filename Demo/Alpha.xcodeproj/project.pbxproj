@@ -340,6 +340,13 @@
 		407296672226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
 		407296682226926A005F06C5 /* ALPHAInstanceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 407296632226926A005F06C5 /* ALPHAInstanceSource.h */; };
 		407296692226926A005F06C5 /* ALPHAInstanceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 407296632226926A005F06C5 /* ALPHAInstanceSource.h */; };
+		407296722226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */ = {isa = PBXBuildFile; fileRef = 407296702226AB4F005F06C5 /* NSBundle+Yzt.h */; };
+		407296732226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */ = {isa = PBXBuildFile; fileRef = 407296702226AB4F005F06C5 /* NSBundle+Yzt.h */; };
+		407296742226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296712226AB4F005F06C5 /* NSBundle+Yzt.m */; };
+		407296752226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296712226AB4F005F06C5 /* NSBundle+Yzt.m */; };
+		407296762226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296712226AB4F005F06C5 /* NSBundle+Yzt.m */; };
+		407296772226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296712226AB4F005F06C5 /* NSBundle+Yzt.m */; };
+		407297722226B73E005F06C5 /* ALPHACoreAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 67E64D60762840CCCAF1A8A3 /* ALPHACoreAssets.h */; };
 		5356823E18F3656900BAAD62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356823D18F3656900BAAD62 /* Foundation.framework */; };
 		5356824018F3656900BAAD62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356823F18F3656900BAAD62 /* CoreGraphics.framework */; };
 		5356824218F3656900BAAD62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356824118F3656900BAAD62 /* UIKit.framework */; };
@@ -590,6 +597,8 @@
 		38FF936B1D95AE7700108D72 /* ALPHATCCPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHATCCPermission.m; sourceTree = "<group>"; };
 		407296622226926A005F06C5 /* ALPHAInstanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAInstanceSource.m; sourceTree = "<group>"; };
 		407296632226926A005F06C5 /* ALPHAInstanceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAInstanceSource.h; sourceTree = "<group>"; };
+		407296702226AB4F005F06C5 /* NSBundle+Yzt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Yzt.h"; sourceTree = "<group>"; };
+		407296712226AB4F005F06C5 /* NSBundle+Yzt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Yzt.m"; sourceTree = "<group>"; };
 		5356823A18F3656900BAAD62 /* UICatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5356823D18F3656900BAAD62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5356823F18F3656900BAAD62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1625,6 +1634,8 @@
 				67E64684FAFB7CAF1F5CBD86 /* NSObject+Swizzle.h */,
 				67E6484A21F18120FFFA31C0 /* NSObject+Swizzle.m */,
 				67E64A2F19429E756AE9135A /* NSObject+Runtime.m */,
+				407296702226AB4F005F06C5 /* NSBundle+Yzt.h */,
+				407296712226AB4F005F06C5 /* NSBundle+Yzt.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -2835,7 +2846,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407297722226B73E005F06C5 /* ALPHACoreAssets.h in Headers */,
 				38614DF71DFEBD34001D3209 /* ALPHABonjourServer.h in Headers */,
+				407296722226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */,
 				38614DEF1DFEBCEB001D3209 /* ALPHABonjourDataChunk.h in Headers */,
 				38614DFB1DFEBD45001D3209 /* NSScanner+Bonjour.h in Headers */,
 				38614DF31DFEBCFB001D3209 /* ALPHABonjourDataConnection.h in Headers */,
@@ -2848,6 +2861,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				407296692226926A005F06C5 /* ALPHAInstanceSource.h in Headers */,
+				407296732226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3228,6 +3242,7 @@
 			files = (
 				407296652226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 				3810F6861DFED61E004F51B6 /* main.m in Sources */,
+				407296752226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				3810F6A11DFEE2AF004F51B6 /* ALPHAToolDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3353,6 +3368,7 @@
 				389CBE771DEE042200D3F99C /* ALPHADepthIndicatorView.m in Sources */,
 				389CBE331DEE03C600D3F99C /* ALPHAKeychainItem.m in Sources */,
 				389CBE2E1DEE03BB00D3F99C /* ALPHAMenuCenterView.m in Sources */,
+				407296762226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				389CBDE51DEE035C00D3F99C /* ALPHAActionItem.m in Sources */,
 				389CBE7E1DEE042D00D3F99C /* ALPHAIvarRendererViewController.m in Sources */,
 				389CBE081DEE037A00D3F99C /* ALPHAApplicationPlugin.m in Sources */,
@@ -3487,6 +3503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407296772226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				407296672226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3537,6 +3554,7 @@
 				535682B318F3670300BAAD62 /* AAPLPageControlViewController.m in Sources */,
 				535682BA18F3670300BAAD62 /* AAPLSwitchViewController.m in Sources */,
 				535682AF18F3670300BAAD62 /* AAPLDefaultSearchBarViewController.m in Sources */,
+				407296742226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				38DE4A4C1A0B7DB000EB447A /* AAPLNetworkViewController.m in Sources */,
 				535682BC18F3670300BAAD62 /* AAPLTextViewController.m in Sources */,
 				535682B418F3670300BAAD62 /* AAPLPickerViewController.m in Sources */,
