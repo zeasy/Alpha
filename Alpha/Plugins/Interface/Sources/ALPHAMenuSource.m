@@ -65,7 +65,7 @@ NSString* const ALPHAMenuDataIdentifier = @"com.unifiedsense.alpha.data.menu";
     section.items = [items sortedArrayUsingDescriptors:@[ prioritySortDescriptor, titleSortDescriptor ]];
     
     ALPHATableScreenModel* dataModel = [[ALPHATableScreenModel alloc] initWithIdentifier:ALPHAMenuDataIdentifier];
-    dataModel.title = @"Alpha";
+    dataModel.title = @"YztAlpha";
     dataModel.sections = @[ section ];
     
     return dataModel;

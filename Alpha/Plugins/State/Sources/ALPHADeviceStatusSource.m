@@ -94,7 +94,7 @@ NSString* const ALPHADeviceStatusDataIdentifier = @"com.unifiedsense.alpha.data.
                              @{ @"Sandbox Size" : [self sizeOfFolder:NSHomeDirectory()] },
                              @{ @"Thread Count" : [NSString stringWithFormat:@"%lu", (unsigned long)[UIApplication sharedApplication].alpha_threadCount] },
                              @{ @"Process Count" : [NSString stringWithFormat:@"%lu", (unsigned long)[UIDevice currentDevice].alpha_processCount] },
-                             @{ @"CPU Usage" : [NSString stringWithFormat:@"%lu%%", (unsigned long)([UIApplication sharedApplication].alpha_cpuUsage * 100.0)] }
+                             @{ @"CPU Usage" : [NSString stringWithFormat:@"%lu%%", (unsigned long)([UIApplication sharedApplication].alpha_cpuUsage)] }
                      ],
                      @"style" : @(UITableViewCellStyleValue1),
                      @"headerText" : @"Usage" };

@@ -153,7 +153,6 @@
 		389CBE461DEE03E300D3F99C /* ALPHANotificationSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E6477FCE8D60B83DE44D0C /* ALPHANotificationSource.m */; };
 		389CBE471DEE03E300D3F99C /* ALPHANotificationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E6474C3FDE8A669ACE0C58 /* ALPHANotificationPlugin.m */; };
 		389CBE481DEE03E600D3F99C /* ALPHAObjectConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E644266D51071765BC4E2E /* ALPHAObjectConverter.m */; };
-		389CBE491DEE03E800D3F99C /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E2F71E1BBDD6540010FC35 /* ALPHAInstanceSource.m */; };
 		389CBE4A1DEE03E800D3F99C /* ALPHAObjectSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E64537EA38EE9360B91B89 /* ALPHAObjectSource.m */; };
 		389CBE4B1DEE03E800D3F99C /* ALPHAObjectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E64B1C4D56B91967382C7A /* ALPHAObjectPlugin.m */; };
 		389CBE4C1DEE03EB00D3F99C /* ALPHAPermissionIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DAAE4C1BBF03D30023841C /* ALPHAPermissionIcon.m */; };
@@ -335,6 +334,12 @@
 		38C5DBEA1E00555300AE4954 /* ViewControllersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5DBAA1E00555300AE4954 /* ViewControllersMenuViewController.swift */; };
 		38DE4A491A0B78BC00EB447A /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DE4A481A0B78BC00EB447A /* Launch.xib */; };
 		38DE4A4C1A0B7DB000EB447A /* AAPLNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE4A4B1A0B7DB000EB447A /* AAPLNetworkViewController.m */; };
+		407296642226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
+		407296652226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
+		407296662226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
+		407296672226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
+		407296682226926A005F06C5 /* ALPHAInstanceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 407296632226926A005F06C5 /* ALPHAInstanceSource.h */; };
+		407296692226926A005F06C5 /* ALPHAInstanceSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 407296632226926A005F06C5 /* ALPHAInstanceSource.h */; };
 		5356823E18F3656900BAAD62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356823D18F3656900BAAD62 /* Foundation.framework */; };
 		5356824018F3656900BAAD62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356823F18F3656900BAAD62 /* CoreGraphics.framework */; };
 		5356824218F3656900BAAD62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5356824118F3656900BAAD62 /* UIKit.framework */; };
@@ -581,10 +586,10 @@
 		38E2F7171BBDBAC20010FC35 /* ALPHAKeychainSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAKeychainSource.m; sourceTree = "<group>"; };
 		38E2F71A1BBDC2320010FC35 /* ALPHAKeychainItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAKeychainItem.h; sourceTree = "<group>"; };
 		38E2F71B1BBDC2320010FC35 /* ALPHAKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAKeychainItem.m; sourceTree = "<group>"; };
-		38E2F71D1BBDD6540010FC35 /* ALPHAInstanceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALPHAInstanceSource.h; path = ../../../../../alpha/alpha/plugins/Object/Sources/ALPHAInstanceSource.h; sourceTree = "<group>"; };
-		38E2F71E1BBDD6540010FC35 /* ALPHAInstanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALPHAInstanceSource.m; path = ../../../../../alpha/alpha/plugins/Object/Sources/ALPHAInstanceSource.m; sourceTree = "<group>"; };
 		38FF936A1D95AE7700108D72 /* ALPHATCCPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHATCCPermission.h; sourceTree = "<group>"; };
 		38FF936B1D95AE7700108D72 /* ALPHATCCPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHATCCPermission.m; sourceTree = "<group>"; };
+		407296622226926A005F06C5 /* ALPHAInstanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAInstanceSource.m; sourceTree = "<group>"; };
+		407296632226926A005F06C5 /* ALPHAInstanceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAInstanceSource.h; sourceTree = "<group>"; };
 		5356823A18F3656900BAAD62 /* UICatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5356823D18F3656900BAAD62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5356823F18F3656900BAAD62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1627,8 +1632,8 @@
 		67E640DAF8B2C8CF37A701A2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				38E2F71D1BBDD6540010FC35 /* ALPHAInstanceSource.h */,
-				38E2F71E1BBDD6540010FC35 /* ALPHAInstanceSource.m */,
+				407296632226926A005F06C5 /* ALPHAInstanceSource.h */,
+				407296622226926A005F06C5 /* ALPHAInstanceSource.m */,
 				67E6446E1A8B9C13E4C20DAA /* ALPHAObjectSource.h */,
 				67E64537EA38EE9360B91B89 /* ALPHAObjectSource.m */,
 			);
@@ -2834,6 +2839,7 @@
 				38614DEF1DFEBCEB001D3209 /* ALPHABonjourDataChunk.h in Headers */,
 				38614DFB1DFEBD45001D3209 /* NSScanner+Bonjour.h in Headers */,
 				38614DF31DFEBCFB001D3209 /* ALPHABonjourDataConnection.h in Headers */,
+				407296682226926A005F06C5 /* ALPHAInstanceSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2841,6 +2847,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407296692226926A005F06C5 /* ALPHAInstanceSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2979,7 +2986,7 @@
 					};
 					38621F011DEDFABE00DE9281 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 289M6XEDV4;
+						DevelopmentTeam = AGLBMWU3A3;
 						ProvisioningStyle = Automatic;
 					};
 					38621F091DEDFABE00DE9281 = {
@@ -3219,6 +3226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407296652226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 				3810F6861DFED61E004F51B6 /* main.m in Sources */,
 				3810F6A11DFEE2AF004F51B6 /* ALPHAToolDelegate.m in Sources */,
 			);
@@ -3317,7 +3325,6 @@
 				389CBE591DEE03F200D3F99C /* ALPHAMotionPermission.m in Sources */,
 				389CBE9C1DEE043D00D3F99C /* NSString+Random.m in Sources */,
 				389CBEB51DEE044600D3F99C /* ALPHAArgumentInputNotSupportedView.m in Sources */,
-				389CBE491DEE03E800D3F99C /* ALPHAInstanceSource.m in Sources */,
 				389CBE6D1DEE041100D3F99C /* ALPHAViewIcon.m in Sources */,
 				389CBE0C1DEE038100D3F99C /* ALPHAEnvironmentIcon.m in Sources */,
 				389CBE291DEE03B400D3F99C /* ALPHAHeapSource.m in Sources */,
@@ -3418,6 +3425,7 @@
 				389CBE8C1DEE043300D3F99C /* ALPHATrigger+Private.m in Sources */,
 				389CBE951DEE043900D3F99C /* UIDevice+DeviceInfo.m in Sources */,
 				389CBE391DEE03D500D3F99C /* ALPHANetworkError.m in Sources */,
+				407296662226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 				389CBE971DEE043900D3F99C /* UIApplication+Version.m in Sources */,
 				389CBE161DEE039300D3F99C /* ALPHAEventIcon.m in Sources */,
 				389CBEA61DEE044000D3F99C /* ALPHAMockObject.m in Sources */,
@@ -3479,6 +3487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407296672226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3540,6 +3549,7 @@
 				535682B518F3670300BAAD62 /* AAPLProgressViewController.m in Sources */,
 				535682AD18F3670300BAAD62 /* AAPLCustomToolbarViewController.m in Sources */,
 				38353E891B1DADEF009E4ACF /* AAPLCatalogTableTableViewController.m in Sources */,
+				407296642226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 				535682A818F3670300BAAD62 /* AAPLActivityIndicatorViewController.m in Sources */,
 				535682B818F3670300BAAD62 /* AAPLSplitViewControllerDelegate.m in Sources */,
 				535682AC18F3670300BAAD62 /* AAPLCustomSearchBarViewController.m in Sources */,
@@ -3659,15 +3669,22 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 289M6XEDV4;
+				DEVELOPMENT_TEAM = AGLBMWU3A3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/../Alpha/Alpha-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unifiedsense.sdk.Alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -3688,15 +3705,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 289M6XEDV4;
+				DEVELOPMENT_TEAM = AGLBMWU3A3;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/../Alpha/Alpha-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unifiedsense.sdk.Alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
