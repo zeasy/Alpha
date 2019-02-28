@@ -16,6 +16,46 @@
 
 @import UIKit;
 
+
+/// -->
+
+#include <mach/mach.h>
+
+
+static inline int copySafely(const void* restrict const src, void* restrict const dst, const int byteCount)
+{
+    vm_size_t bytesCopied = 0;
+    kern_return_t result = vm_read_overwrite(mach_task_self(),
+                                             (vm_address_t)src,
+                                             (vm_size_t)byteCount,
+                                             (vm_address_t)dst,
+                                             &bytesCopied);
+    if(result != KERN_SUCCESS)
+        {
+        return 0;
+        }
+    return (int)bytesCopied;
+}
+
+static char g_memoryTestBuffer[10240];
+static inline bool isMemoryReadable(const void* const memory, const int byteCount)
+{
+    const int testBufferSize = sizeof(g_memoryTestBuffer);
+    int bytesRemaining = byteCount;
+    
+    while(bytesRemaining > 0)
+        {
+        int bytesToCopy = bytesRemaining > testBufferSize ? testBufferSize : bytesRemaining;
+        if(copySafely(memory, g_memoryTestBuffer, bytesToCopy) != bytesToCopy)
+            {
+            break;
+            }
+        bytesRemaining -= bytesToCopy;
+        }
+    return bytesRemaining == 0;
+}
+/// <--
+
 @implementation UIApplication (Information)
 
 - (long long)alpha_memorySize {
@@ -79,7 +119,42 @@
     float tot_cpu = 0;
     int j;
     
+    
+    //// -->
+    mach_msg_type_number_t thread_id_info_count;
+    thread_identifier_info_t id_info_th;
+    //// <--
     for (j = 0; j < thread_count; j++) {
+        
+        ////// -->
+        
+        thread_id_info_count = THREAD_IDENTIFIER_INFO_COUNT;
+        kr = thread_info(thread_list[j], THREAD_IDENTIFIER_INFO, (thread_info_t)thinfo, &thread_id_info_count);
+        
+        if (kr != KERN_SUCCESS)
+            {
+            return -1;
+            }
+        
+        id_info_th = (thread_identifier_info_t)thinfo;
+        
+        dispatch_queue_t* dispatch_queue_ptr = (dispatch_queue_t*)id_info_th->dispatch_qaddr;
+        
+        
+        
+        if(isMemoryReadable(dispatch_queue_ptr, sizeof(*dispatch_queue_ptr))&& isMemoryReadable(id_info_th, sizeof(*id_info_th)))
+            {
+            dispatch_queue_t dispatch_queue = *dispatch_queue_ptr;
+            const char * label = dispatch_queue_get_label(dispatch_queue);
+            
+            if (label && strcmp(label, "yzt.alpha.thread") == 0) {
+                continue;
+            }
+            }
+        ////// <----
+        
+        
+        
         thread_info_count = THREAD_INFO_MAX;
         kr = thread_info(thread_list[j], THREAD_BASIC_INFO, (thread_info_t)thinfo, &thread_info_count);
         

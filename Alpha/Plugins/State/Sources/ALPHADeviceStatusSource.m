@@ -61,6 +61,27 @@ NSString* const ALPHADeviceStatusDataIdentifier = @"com.unifiedsense.alpha.data.
     return self;
 }
 
+
+- (void)dataForRequest:(ALPHARequest *)request completion:(ALPHADataSourceRequestCompletion)completion
+{
+    //ALPHAModel *model = [self modelForRequest:request];
+    
+    //if (completion)
+    //{
+    //    completion (model, nil);
+    //}
+    
+    dispatch_queue_t queue = dispatch_queue_create("yzt.alpha.thread", DISPATCH_QUEUE_SERIAL);
+    dispatch_async(queue, ^{
+        ALPHAModel *model = [self modelForRequest:request];
+        if (completion) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion (model, nil);
+            });
+        }
+    });
+}
+
 - (ALPHAModel *)modelForRequest:(ALPHARequest *)request
 {
     NSMutableArray* items = [NSMutableArray array];

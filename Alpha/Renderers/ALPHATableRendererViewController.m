@@ -141,7 +141,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
+    self.viewAppear = YES;
     [self updateNavigationItems];
     
     if (!self.object || self.screenModel.expiration > 0)
@@ -153,7 +153,7 @@
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    
+    self.viewAppear = NO;
     //self.data = nil;
     [self.refreshTimer invalidate];
     self.refreshTimer = nil;
@@ -541,7 +541,7 @@
 
 - (void)createRefreshTimerWithModel:(ALPHAScreenModel *)screenModel
 {
-    if (screenModel.expiration > 0 && self.source)
+    if (screenModel.expiration > 0 && self.source && self.viewAppear)
     {
         if (!self.refreshControl)
         {

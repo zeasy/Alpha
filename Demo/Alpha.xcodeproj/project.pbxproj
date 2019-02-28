@@ -222,7 +222,7 @@
 		389CBE8C1DEE043300D3F99C /* ALPHATrigger+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E648FC29C74FC22E4DD607 /* ALPHATrigger+Private.m */; };
 		389CBE8D1DEE043600D3F99C /* ALPHAApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E646EB152F51F48E19D7F0 /* ALPHAApplicationDelegate.m */; };
 		389CBE8E1DEE043900D3F99C /* UIApplication+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E6474440D3138A5BDFEA1D /* UIApplication+Screenshot.m */; };
-		389CBE8F1DEE043900D3F99C /* UIApplication+Information.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E64AD041F9733142D78238 /* UIApplication+Information.m */; };
+		389CBE8F1DEE043900D3F99C /* UIApplication+Information.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E64AD041F9733142D78238 /* UIApplication+Information.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		389CBE901DEE043900D3F99C /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E64E1EB499F9FE344B1FB4 /* UIView+Snapshot.m */; };
 		389CBE911DEE043900D3F99C /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E64872D4D7D58B5F4A850B /* UIColor+Utility.m */; };
 		389CBE921DEE043900D3F99C /* UIApplication+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E641DF1424CEE0F56D96EA /* UIApplication+Event.m */; };

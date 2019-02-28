@@ -31,4 +31,6 @@
 
 @property (nonatomic, strong) ALPHASearchScopeView *detailView;
 
+@property (assign) BOOL viewAppear;
+
 @end
