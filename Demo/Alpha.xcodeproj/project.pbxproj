@@ -334,6 +334,24 @@
 		38C5DBEA1E00555300AE4954 /* ViewControllersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C5DBAA1E00555300AE4954 /* ViewControllersMenuViewController.swift */; };
 		38DE4A491A0B78BC00EB447A /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DE4A481A0B78BC00EB447A /* Launch.xib */; };
 		38DE4A4C1A0B7DB000EB447A /* AAPLNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DE4A4B1A0B7DB000EB447A /* AAPLNetworkViewController.m */; };
+		4069FCE9222E5812002EC77A /* ALPHA_MBWebSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCE3222E580D002EC77A /* ALPHA_MBWebSocketServer.h */; };
+		4069FCEA222E5812002EC77A /* ALPHA_MBWebSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCE3222E580D002EC77A /* ALPHA_MBWebSocketServer.h */; };
+		4069FCEB222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */; };
+		4069FCEC222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */; };
+		4069FCED222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */; };
+		4069FCEE222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */; };
+		4069FCEF222E5812002EC77A /* ALPHA_GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCE5222E580D002EC77A /* ALPHA_GCDAsyncSocket.h */; };
+		4069FCF0222E5812002EC77A /* ALPHA_GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCE5222E580D002EC77A /* ALPHA_GCDAsyncSocket.h */; };
+		4069FCF1222E5812002EC77A /* ALPHAWebSocketServerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCE6222E580D002EC77A /* ALPHAWebSocketServerNode.h */; };
+		4069FCF2222E5812002EC77A /* ALPHAWebSocketServerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCE6222E580D002EC77A /* ALPHAWebSocketServerNode.h */; };
+		4069FCF3222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */; };
+		4069FCF4222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */; };
+		4069FCF5222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */; };
+		4069FCF6222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */; };
+		4069FCF7222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
+		4069FCF8222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
+		4069FCF9222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
+		4069FCFA222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
 		407296642226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
 		407296652226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
 		407296662226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
@@ -595,6 +613,12 @@
 		38E2F71B1BBDC2320010FC35 /* ALPHAKeychainItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAKeychainItem.m; sourceTree = "<group>"; };
 		38FF936A1D95AE7700108D72 /* ALPHATCCPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHATCCPermission.h; sourceTree = "<group>"; };
 		38FF936B1D95AE7700108D72 /* ALPHATCCPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHATCCPermission.m; sourceTree = "<group>"; };
+		4069FCE3222E580D002EC77A /* ALPHA_MBWebSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHA_MBWebSocketServer.h; sourceTree = "<group>"; };
+		4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAWebSocketServerNode.m; sourceTree = "<group>"; };
+		4069FCE5222E580D002EC77A /* ALPHA_GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHA_GCDAsyncSocket.h; sourceTree = "<group>"; };
+		4069FCE6222E580D002EC77A /* ALPHAWebSocketServerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAWebSocketServerNode.h; sourceTree = "<group>"; };
+		4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHA_MBWebSocketServer.m; sourceTree = "<group>"; };
+		4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHA_GCDAsyncSocket.m; sourceTree = "<group>"; };
 		407296622226926A005F06C5 /* ALPHAInstanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAInstanceSource.m; sourceTree = "<group>"; };
 		407296632226926A005F06C5 /* ALPHAInstanceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAInstanceSource.h; sourceTree = "<group>"; };
 		407296702226AB4F005F06C5 /* NSBundle+Yzt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Yzt.h"; sourceTree = "<group>"; };
@@ -1411,6 +1435,19 @@
 				38E2F71B1BBDC2320010FC35 /* ALPHAKeychainItem.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4069FCE2222E580D002EC77A /* Model2 */ = {
+			isa = PBXGroup;
+			children = (
+				4069FCE3222E580D002EC77A /* ALPHA_MBWebSocketServer.h */,
+				4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */,
+				4069FCE5222E580D002EC77A /* ALPHA_GCDAsyncSocket.h */,
+				4069FCE6222E580D002EC77A /* ALPHAWebSocketServerNode.h */,
+				4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */,
+				4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */,
+			);
+			path = Model2;
 			sourceTree = "<group>";
 		};
 		5356823118F3656900BAAD62 = {
@@ -2333,6 +2370,7 @@
 		67E6497118E36E624757672E /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				4069FCE2222E580D002EC77A /* Model2 */,
 				67E64C134027CA8E648AA990 /* Model */,
 				67E64F13D02B8B15994ECD6A /* ALPHAServerPlugin.h */,
 				67E64FF512FD6A8D0D3560ED /* ALPHAServerPlugin.m */,
@@ -2846,7 +2884,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4069FCF1222E5812002EC77A /* ALPHAWebSocketServerNode.h in Headers */,
+				4069FCEF222E5812002EC77A /* ALPHA_GCDAsyncSocket.h in Headers */,
 				407297722226B73E005F06C5 /* ALPHACoreAssets.h in Headers */,
+				4069FCE9222E5812002EC77A /* ALPHA_MBWebSocketServer.h in Headers */,
 				38614DF71DFEBD34001D3209 /* ALPHABonjourServer.h in Headers */,
 				407296722226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */,
 				38614DEF1DFEBCEB001D3209 /* ALPHABonjourDataChunk.h in Headers */,
@@ -2860,7 +2901,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4069FCF2222E5812002EC77A /* ALPHAWebSocketServerNode.h in Headers */,
+				4069FCEA222E5812002EC77A /* ALPHA_MBWebSocketServer.h in Headers */,
 				407296692226926A005F06C5 /* ALPHAInstanceSource.h in Headers */,
+				4069FCF0222E5812002EC77A /* ALPHA_GCDAsyncSocket.h in Headers */,
 				407296732226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3240,8 +3284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4069FCF4222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */,
+				4069FCEC222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */,
 				407296652226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
 				3810F6861DFED61E004F51B6 /* main.m in Sources */,
+				4069FCF8222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */,
 				407296752226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				3810F6A11DFEE2AF004F51B6 /* ALPHAToolDelegate.m in Sources */,
 			);
@@ -3339,6 +3386,7 @@
 				389CBE4F1DEE03F200D3F99C /* ALPHAPermission.m in Sources */,
 				389CBE591DEE03F200D3F99C /* ALPHAMotionPermission.m in Sources */,
 				389CBE9C1DEE043D00D3F99C /* NSString+Random.m in Sources */,
+				4069FCF5222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */,
 				389CBEB51DEE044600D3F99C /* ALPHAArgumentInputNotSupportedView.m in Sources */,
 				389CBE6D1DEE041100D3F99C /* ALPHAViewIcon.m in Sources */,
 				389CBE0C1DEE038100D3F99C /* ALPHAEnvironmentIcon.m in Sources */,
@@ -3349,6 +3397,7 @@
 				389CBE1E1DEE03A400D3F99C /* ALPHAFileConverter.m in Sources */,
 				389CBDE81DEE035C00D3F99C /* ALPHASelectorActionItem.m in Sources */,
 				389CBE651DEE040900D3F99C /* ALPHADeviceStatusSource.m in Sources */,
+				4069FCF9222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */,
 				389CBE3E1DEE03D500D3F99C /* ALPHANetworkConnection.m in Sources */,
 				389CBDEF1DEE036500D3F99C /* ALPHANetworkObject.m in Sources */,
 				389CBEB41DEE044600D3F99C /* ALPHAArgumentInputFontsPickerView.m in Sources */,
@@ -3388,6 +3437,7 @@
 				389CBEBC1DEE04C500D3F99C /* ALPHAAssetManager.m in Sources */,
 				38614E051DFEC670001D3209 /* ALPHARemotePlugin.m in Sources */,
 				389CBDFC1DEE036B00D3F99C /* ALPHATableScreenModel.m in Sources */,
+				4069FCED222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */,
 				389CBDF41DEE036800D3F99C /* ALPHAObjectContent.m in Sources */,
 				389CBDF51DEE036800D3F99C /* ALPHAObjectElement.m in Sources */,
 				389CBEAD1DEE044600D3F99C /* ALPHAArgumentInputColorView.m in Sources */,
@@ -3505,6 +3555,9 @@
 			files = (
 				407296772226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				407296672226926A005F06C5 /* ALPHAInstanceSource.m in Sources */,
+				4069FCFA222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */,
+				4069FCF6222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */,
+				4069FCEE222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3549,8 +3602,11 @@
 				535682AE18F3670300BAAD62 /* AAPLDatePickerController.m in Sources */,
 				535682AB18F3670300BAAD62 /* AAPLButtonViewController.m in Sources */,
 				535682B618F3670300BAAD62 /* AAPLSegmentedControlViewController.m in Sources */,
+				4069FCEB222E5812002EC77A /* ALPHAWebSocketServerNode.m in Sources */,
+				4069FCF7222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */,
 				535682B018F3670300BAAD62 /* AAPLDefaultToolbarViewController.m in Sources */,
 				535682BD18F3670300BAAD62 /* AAPLTintedToolbarViewController.m in Sources */,
+				4069FCF3222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */,
 				535682B318F3670300BAAD62 /* AAPLPageControlViewController.m in Sources */,
 				535682BA18F3670300BAAD62 /* AAPLSwitchViewController.m in Sources */,
 				535682AF18F3670300BAAD62 /* AAPLDefaultSearchBarViewController.m in Sources */,

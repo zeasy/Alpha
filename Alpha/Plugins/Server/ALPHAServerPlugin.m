@@ -14,9 +14,12 @@
 #import "ALPHAManager.h"
 #import "ALPHACoreAssets.h"
 
+#import "ALPHAWebSocketServerNode.h"
+
 @interface ALPHAServerPlugin ()
 
-@property (nonatomic, strong) ALPHAServerNode* server;
+//@property (nonatomic, strong) ALPHAServerNode* server;
+@property (nonatomic, strong) ALPHAWebSocketServerNode* server;
 
 @end
 
@@ -24,11 +27,13 @@
 
 #pragma mark - Getters and Setters
 
-- (ALPHAServerNode *)server
+//- (ALPHAServerNode *)server
+- (ALPHAWebSocketServerNode *)server
 {
     if (!_server)
     {
-        _server = [[ALPHAServerNode alloc] init];
+//        _server = [[ALPHAServerNode alloc] init];
+        _server = [[ALPHAWebSocketServerNode alloc] init];
         
         ALPHALocalSource* source = [ALPHALocalSource new];
         [source loadSourcesFromPlugins:[ALPHAManager defaultManager].plugins];
