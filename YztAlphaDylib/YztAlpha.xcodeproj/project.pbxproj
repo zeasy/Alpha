@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40728D7D22265E0A005F06C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40728D7C22265E0A005F06C5 /* UIKit.framework */; };
+		40728D7F22265E0A005F06C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40728D7E22265E0A005F06C5 /* Foundation.framework */; };
+		40728D8122265E0A005F06C5 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40728D8022265E0A005F06C5 /* CydiaSubstrate.framework */; };
+		40728D9022265E0A005F06C5 /* YztAlpha.mm in Sources */ = {isa = PBXBuildFile; fileRef = 40728D8F22265E0A005F06C5 /* YztAlpha.mm */; };
+		40728FF422265F72005F06C5 /* YztAlphaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40728D9A22265F71005F06C5 /* YztAlphaManager.m */; };
+		40728FF522265F72005F06C5 /* YztAlphaManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 40728D9B22265F71005F06C5 /* YztAlphaManager.h */; };
+		407291DB222666AC005F06C5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291DA222666AC005F06C5 /* Security.framework */; };
+		407291DD222666B0005F06C5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291DC222666B0005F06C5 /* CoreTelephony.framework */; };
+		407291DF222666B5005F06C5 /* libobjc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291DE222666B5005F06C5 /* libobjc.tbd */; };
+		407291E1222666DE005F06C5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291E0222666DE005F06C5 /* HealthKit.framework */; };
+		407291E3222666F9005F06C5 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291E2222666F9005F06C5 /* HomeKit.framework */; };
+		407291E722266711005F06C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291E622266710005F06C5 /* CoreGraphics.framework */; };
+		407291E922266724005F06C5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291E822266724005F06C5 /* CoreMotion.framework */; };
+		407291EB2226673B005F06C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291EA2226673B005F06C5 /* CoreLocation.framework */; };
+		407291ED2226674C005F06C5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291EC2226674C005F06C5 /* AVFoundation.framework */; };
+		407291EF22266752005F06C5 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291EE22266752005F06C5 /* Accounts.framework */; };
+		407291F122266768005F06C5 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291F022266767005F06C5 /* Contacts.framework */; };
+		407291F522266799005F06C5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291F422266799005F06C5 /* SystemConfiguration.framework */; };
+		407291F7222667AC005F06C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291F6222667AC005F06C5 /* QuartzCore.framework */; };
+		407291F9222667BA005F06C5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291F8222667BA005F06C5 /* AddressBook.framework */; };
+		407291FB222667CC005F06C5 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291FA222667CC005F06C5 /* Photos.framework */; };
+		407291FD222667D0005F06C5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291FC222667D0005F06C5 /* EventKit.framework */; };
+		407291FF222667E5005F06C5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407291FE222667E5005F06C5 /* CFNetwork.framework */; };
+		40729201222667F8005F06C5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40729200222667F8005F06C5 /* CoreBluetooth.framework */; };
+		40729203222667FF005F06C5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40729202222667FF005F06C5 /* CoreText.framework */; };
+		407292052226680F005F06C5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407292042226680F005F06C5 /* CoreImage.framework */; };
+		407296782226B21F005F06C5 /* Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4072966B22269323005F06C5 /* Alpha.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40728D7922265E0A005F06C5 /* YztAlpha.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = YztAlpha.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		40728D7C22265E0A005F06C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40728D7E22265E0A005F06C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40728D8022265E0A005F06C5 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		40728D8522265E0A005F06C5 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		40728D8922265E0A005F06C5 /* YztAlpha.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = YztAlpha.plist; path = Package/Library/PreferenceLoader/Preferences/YztAlpha.plist; sourceTree = "<group>"; };
+		40728D8A22265E0A005F06C5 /* YztAlphaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YztAlphaIcon.png; path = Package/Library/PreferenceLoader/Preferences/YztAlphaIcon.png; sourceTree = "<group>"; };
+		40728D8B22265E0A005F06C5 /* YztAlphaIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "YztAlphaIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/YztAlphaIcon@2x.png"; sourceTree = "<group>"; };
+		40728D8D22265E0A005F06C5 /* YztAlpha-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YztAlpha-Prefix.pch"; sourceTree = "<group>"; };
+		40728D8E22265E0A005F06C5 /* YztAlpha.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = YztAlpha.xm; sourceTree = "<group>"; };
+		40728D8F22265E0A005F06C5 /* YztAlpha.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = YztAlpha.mm; sourceTree = "<group>"; };
+		40728D9322265E0A005F06C5 /* YztAlpha.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = YztAlpha.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/YztAlpha.plist; sourceTree = "<group>"; };
+		40728D9A22265F71005F06C5 /* YztAlphaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YztAlphaManager.m; sourceTree = "<group>"; };
+		40728D9B22265F71005F06C5 /* YztAlphaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YztAlphaManager.h; sourceTree = "<group>"; };
+		407291DA222666AC005F06C5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		407291DC222666B0005F06C5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		407291DE222666B5005F06C5 /* libobjc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libobjc.tbd; path = usr/lib/libobjc.tbd; sourceTree = SDKROOT; };
+		407291E0222666DE005F06C5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		407291E2222666F9005F06C5 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		407291E4222666FE005F06C5 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKitUI.framework; path = System/Library/Frameworks/HealthKitUI.framework; sourceTree = SDKROOT; };
+		407291E622266710005F06C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		407291E822266724005F06C5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		407291EA2226673B005F06C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		407291EC2226674C005F06C5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		407291EE22266752005F06C5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		407291F022266767005F06C5 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		407291F222266772005F06C5 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		407291F422266799005F06C5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		407291F6222667AC005F06C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		407291F8222667BA005F06C5 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		407291FA222667CC005F06C5 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		407291FC222667D0005F06C5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		407291FE222667E5005F06C5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		40729200222667F8005F06C5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		40729202222667FF005F06C5 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		407292042226680F005F06C5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		4072966B22269323005F06C5 /* Alpha.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alpha.framework; path = YztAlpha/Sources/Alpha.framework; sourceTree = "<group>"; };
+		4072966D222693CD005F06C5 /* Alpha */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Alpha; path = YztAlpha/Sources/Alpha.framework/Alpha; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40728D7522265E0A005F06C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407296782226B21F005F06C5 /* Alpha.framework in Frameworks */,
+				407292052226680F005F06C5 /* CoreImage.framework in Frameworks */,
+				40729203222667FF005F06C5 /* CoreText.framework in Frameworks */,
+				40729201222667F8005F06C5 /* CoreBluetooth.framework in Frameworks */,
+				407291FF222667E5005F06C5 /* CFNetwork.framework in Frameworks */,
+				407291FD222667D0005F06C5 /* EventKit.framework in Frameworks */,
+				407291FB222667CC005F06C5 /* Photos.framework in Frameworks */,
+				407291F9222667BA005F06C5 /* AddressBook.framework in Frameworks */,
+				407291F7222667AC005F06C5 /* QuartzCore.framework in Frameworks */,
+				407291F522266799005F06C5 /* SystemConfiguration.framework in Frameworks */,
+				407291F122266768005F06C5 /* Contacts.framework in Frameworks */,
+				407291EF22266752005F06C5 /* Accounts.framework in Frameworks */,
+				407291ED2226674C005F06C5 /* AVFoundation.framework in Frameworks */,
+				407291DD222666B0005F06C5 /* CoreTelephony.framework in Frameworks */,
+				407291EB2226673B005F06C5 /* CoreLocation.framework in Frameworks */,
+				407291E922266724005F06C5 /* CoreMotion.framework in Frameworks */,
+				407291E722266711005F06C5 /* CoreGraphics.framework in Frameworks */,
+				407291E3222666F9005F06C5 /* HomeKit.framework in Frameworks */,
+				407291E1222666DE005F06C5 /* HealthKit.framework in Frameworks */,
+				407291DF222666B5005F06C5 /* libobjc.tbd in Frameworks */,
+				407291DB222666AC005F06C5 /* Security.framework in Frameworks */,
+				40728D7D22265E0A005F06C5 /* UIKit.framework in Frameworks */,
+				40728D7F22265E0A005F06C5 /* Foundation.framework in Frameworks */,
+				40728D8122265E0A005F06C5 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40728D6E22265E0A005F06C5 = {
+			isa = PBXGroup;
+			children = (
+				40728D8222265E0A005F06C5 /* YztAlpha */,
+				40728D7B22265E0A005F06C5 /* Frameworks */,
+				40728D7A22265E0A005F06C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		40728D7A22265E0A005F06C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40728D7922265E0A005F06C5 /* YztAlpha.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40728D7B22265E0A005F06C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4072966D222693CD005F06C5 /* Alpha */,
+				4072966B22269323005F06C5 /* Alpha.framework */,
+				407292042226680F005F06C5 /* CoreImage.framework */,
+				40729202222667FF005F06C5 /* CoreText.framework */,
+				40729200222667F8005F06C5 /* CoreBluetooth.framework */,
+				407291FE222667E5005F06C5 /* CFNetwork.framework */,
+				407291FC222667D0005F06C5 /* EventKit.framework */,
+				407291FA222667CC005F06C5 /* Photos.framework */,
+				407291F8222667BA005F06C5 /* AddressBook.framework */,
+				407291F6222667AC005F06C5 /* QuartzCore.framework */,
+				407291F422266799005F06C5 /* SystemConfiguration.framework */,
+				407291F222266772005F06C5 /* CoreNFC.framework */,
+				407291F022266767005F06C5 /* Contacts.framework */,
+				407291EE22266752005F06C5 /* Accounts.framework */,
+				407291EC2226674C005F06C5 /* AVFoundation.framework */,
+				407291EA2226673B005F06C5 /* CoreLocation.framework */,
+				407291E822266724005F06C5 /* CoreMotion.framework */,
+				407291E622266710005F06C5 /* CoreGraphics.framework */,
+				407291E4222666FE005F06C5 /* HealthKitUI.framework */,
+				407291E2222666F9005F06C5 /* HomeKit.framework */,
+				407291E0222666DE005F06C5 /* HealthKit.framework */,
+				407291DE222666B5005F06C5 /* libobjc.tbd */,
+				407291DC222666B0005F06C5 /* CoreTelephony.framework */,
+				407291DA222666AC005F06C5 /* Security.framework */,
+				40728D7C22265E0A005F06C5 /* UIKit.framework */,
+				40728D7E22265E0A005F06C5 /* Foundation.framework */,
+				40728D8022265E0A005F06C5 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40728D8222265E0A005F06C5 /* YztAlpha */ = {
+			isa = PBXGroup;
+			children = (
+				40728D9922265F71005F06C5 /* Sources */,
+				40728D8E22265E0A005F06C5 /* YztAlpha.xm */,
+				40728D8F22265E0A005F06C5 /* YztAlpha.mm */,
+				40728D8322265E0A005F06C5 /* Package */,
+				40728D8C22265E0A005F06C5 /* Supporting Files */,
+			);
+			path = YztAlpha;
+			sourceTree = "<group>";
+		};
+		40728D8322265E0A005F06C5 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				40728D8422265E0A005F06C5 /* DEBIAN */,
+				40728D8622265E0A005F06C5 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		40728D8422265E0A005F06C5 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				40728D8522265E0A005F06C5 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		40728D8622265E0A005F06C5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				40728D8722265E0A005F06C5 /* PreferenceLoader */,
+				40728D9122265E0A005F06C5 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		40728D8722265E0A005F06C5 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				40728D8822265E0A005F06C5 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		40728D8822265E0A005F06C5 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				40728D8922265E0A005F06C5 /* YztAlpha.plist */,
+				40728D8A22265E0A005F06C5 /* YztAlphaIcon.png */,
+				40728D8B22265E0A005F06C5 /* YztAlphaIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		40728D8C22265E0A005F06C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40728D8D22265E0A005F06C5 /* YztAlpha-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40728D9122265E0A005F06C5 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				40728D9222265E0A005F06C5 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		40728D9222265E0A005F06C5 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				40728D9322265E0A005F06C5 /* YztAlpha.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		40728D9922265F71005F06C5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				40728D9A22265F71005F06C5 /* YztAlphaManager.m */,
+				40728D9B22265F71005F06C5 /* YztAlphaManager.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40728D7622265E0A005F06C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40728FF522265F72005F06C5 /* YztAlphaManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40728D7822265E0A005F06C5 /* YztAlpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40728D9622265E0A005F06C5 /* Build configuration list for PBXNativeTarget "YztAlpha" */;
+			buildPhases = (
+				40728D7322265E0A005F06C5 /* ShellScript */,
+				40728D7422265E0A005F06C5 /* Sources */,
+				40728D7522265E0A005F06C5 /* Frameworks */,
+				40728D7622265E0A005F06C5 /* Headers */,
+				40728D7722265E0A005F06C5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YztAlpha;
+			productName = YztAlpha;
+			productReference = 40728D7922265E0A005F06C5 /* YztAlpha.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40728D6F22265E0A005F06C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					40728D7822265E0A005F06C5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 40728D7222265E0A005F06C5 /* Build configuration list for PBXProject "YztAlpha" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 40728D6E22265E0A005F06C5;
+			productRefGroup = 40728D7A22265E0A005F06C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40728D7822265E0A005F06C5 /* YztAlpha */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40728D7322265E0A005F06C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		40728D7722265E0A005F06C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40728D7422265E0A005F06C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40728FF422265F72005F06C5 /* YztAlphaManager.m in Sources */,
+				40728D9022265E0A005F06C5 /* YztAlpha.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		40728D9422265E0A005F06C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"YztAlpha\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40728D9522265E0A005F06C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"YztAlpha\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		40728D9722265E0A005F06C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FXA6THJ8UR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YztAlpha/Sources",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YztAlpha/YztAlpha-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YztAlpha/Sources/Alpha.framework",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 10.180.186.50;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-fprofile-instr-generate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40728D9822265E0A005F06C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FXA6THJ8UR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YztAlpha/Sources",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YztAlpha/YztAlpha-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YztAlpha/Sources/Alpha.framework",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 10.180.186.50;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+					"-fprofile-instr-generate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40728D7222265E0A005F06C5 /* Build configuration list for PBXProject "YztAlpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40728D9422265E0A005F06C5 /* Release */,
+				40728D9522265E0A005F06C5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40728D9622265E0A005F06C5 /* Build configuration list for PBXNativeTarget "YztAlpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40728D9722265E0A005F06C5 /* Release */,
+				40728D9822265E0A005F06C5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40728D6F22265E0A005F06C5 /* Project object */;
+}
