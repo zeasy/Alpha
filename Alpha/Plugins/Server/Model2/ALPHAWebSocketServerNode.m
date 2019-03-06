@@ -10,7 +10,8 @@
 #import "ALPHA_MBWebSocketServer.h"
 #import "ALPHAManager.h"
 
-#import "ALPHASerialization.h"
+#import "YZT_ALPHAModel.h"
+
 
 @interface ALPHAWebSocketServerNode() <ALPHA_MBWebSocketServerDelegate>{
     
@@ -74,15 +75,19 @@
         NSString *action = object[@"action"];
         NSString *event = object[@"event"];
         NSDictionary *params = object[@"params"] ?: @{};
-        
+        NSString *requestId = object[@"requestId"] ?: @"";
         if([@"query" isEqualToString:action] && event) {
             ALPHARequest *request = [ALPHARequest requestWithIdentifier:event parameters:params];
             [self.source dataForRequest:request completion:^(id object, NSError *error) {
-                if(!error) {
-//                    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:object];
-//                    NSDictionary *resp = [object codableProperties];
-//                    NSData *data = [NSCoder coder];
-                    NSDictionary *resp = @{@"code":@0};
+                if(!error && [object isKindOfClass:[YZT_ALPHAModel class]]) {
+                    YZT_ALPHAModel *model = (YZT_ALPHAModel *)object;
+                    NSDictionary *resp = @{
+                                           @"code":@(model.code),
+                                           @"msg":model.message?:@"",
+                                           @"data":model.data?:@{},
+                                           @"timestamp":@(model.timestamp),
+                                           @"requestId":requestId
+                                           };
                     NSData *data = [NSJSONSerialization dataWithJSONObject:resp options:0 error:0];
                     [connection writeWebSocketFrame:data];
                 }

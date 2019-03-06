@@ -352,6 +352,15 @@
 		4069FCF8222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
 		4069FCF9222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
 		4069FCFA222E5812002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */; };
+		4069FD0F222FC8F9002EC77A /* YZTPlugins.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD09222FC8F9002EC77A /* YZTPlugins.m */; };
+		4069FD10222FC8F9002EC77A /* YZTPlugins.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD09222FC8F9002EC77A /* YZTPlugins.m */; };
+		4069FD11222FC8F9002EC77A /* YZTDeviceStatusSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD0A222FC8F9002EC77A /* YZTDeviceStatusSource.m */; };
+		4069FD12222FC8F9002EC77A /* YZTDeviceStatusSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD0A222FC8F9002EC77A /* YZTDeviceStatusSource.m */; };
+		4069FD13222FC8F9002EC77A /* YZT_ALPHAModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FD0B222FC8F9002EC77A /* YZT_ALPHAModel.h */; };
+		4069FD14222FC8F9002EC77A /* YZTPlugins.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FD0C222FC8F9002EC77A /* YZTPlugins.h */; };
+		4069FD15222FC8F9002EC77A /* YZT_ALPHAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD0D222FC8F9002EC77A /* YZT_ALPHAModel.m */; };
+		4069FD16222FC8F9002EC77A /* YZT_ALPHAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD0D222FC8F9002EC77A /* YZT_ALPHAModel.m */; };
+		4069FD17222FC8F9002EC77A /* YZTDeviceStatusSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FD0E222FC8F9002EC77A /* YZTDeviceStatusSource.h */; };
 		407296642226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
 		407296652226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
 		407296662226926A005F06C5 /* ALPHAInstanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 407296622226926A005F06C5 /* ALPHAInstanceSource.m */; };
@@ -619,6 +628,12 @@
 		4069FCE6222E580D002EC77A /* ALPHAWebSocketServerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAWebSocketServerNode.h; sourceTree = "<group>"; };
 		4069FCE7222E580D002EC77A /* ALPHA_MBWebSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHA_MBWebSocketServer.m; sourceTree = "<group>"; };
 		4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHA_GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4069FD09222FC8F9002EC77A /* YZTPlugins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTPlugins.m; sourceTree = "<group>"; };
+		4069FD0A222FC8F9002EC77A /* YZTDeviceStatusSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZTDeviceStatusSource.m; sourceTree = "<group>"; };
+		4069FD0B222FC8F9002EC77A /* YZT_ALPHAModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZT_ALPHAModel.h; sourceTree = "<group>"; };
+		4069FD0C222FC8F9002EC77A /* YZTPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTPlugins.h; sourceTree = "<group>"; };
+		4069FD0D222FC8F9002EC77A /* YZT_ALPHAModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZT_ALPHAModel.m; sourceTree = "<group>"; };
+		4069FD0E222FC8F9002EC77A /* YZTDeviceStatusSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZTDeviceStatusSource.h; sourceTree = "<group>"; };
 		407296622226926A005F06C5 /* ALPHAInstanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHAInstanceSource.m; sourceTree = "<group>"; };
 		407296632226926A005F06C5 /* ALPHAInstanceSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAInstanceSource.h; sourceTree = "<group>"; };
 		407296702226AB4F005F06C5 /* NSBundle+Yzt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Yzt.h"; sourceTree = "<group>"; };
@@ -1440,6 +1455,7 @@
 		4069FCE2222E580D002EC77A /* Model2 */ = {
 			isa = PBXGroup;
 			children = (
+				4069FD08222FC8F9002EC77A /* Commands */,
 				4069FCE3222E580D002EC77A /* ALPHA_MBWebSocketServer.h */,
 				4069FCE4222E580D002EC77A /* ALPHAWebSocketServerNode.m */,
 				4069FCE5222E580D002EC77A /* ALPHA_GCDAsyncSocket.h */,
@@ -1448,6 +1464,19 @@
 				4069FCE8222E580D002EC77A /* ALPHA_GCDAsyncSocket.m */,
 			);
 			path = Model2;
+			sourceTree = "<group>";
+		};
+		4069FD08222FC8F9002EC77A /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				4069FD09222FC8F9002EC77A /* YZTPlugins.m */,
+				4069FD0A222FC8F9002EC77A /* YZTDeviceStatusSource.m */,
+				4069FD0B222FC8F9002EC77A /* YZT_ALPHAModel.h */,
+				4069FD0C222FC8F9002EC77A /* YZTPlugins.h */,
+				4069FD0D222FC8F9002EC77A /* YZT_ALPHAModel.m */,
+				4069FD0E222FC8F9002EC77A /* YZTDeviceStatusSource.h */,
+			);
+			path = Commands;
 			sourceTree = "<group>";
 		};
 		5356823118F3656900BAAD62 = {
@@ -2887,11 +2916,14 @@
 				4069FCF1222E5812002EC77A /* ALPHAWebSocketServerNode.h in Headers */,
 				4069FCEF222E5812002EC77A /* ALPHA_GCDAsyncSocket.h in Headers */,
 				407297722226B73E005F06C5 /* ALPHACoreAssets.h in Headers */,
+				4069FD14222FC8F9002EC77A /* YZTPlugins.h in Headers */,
+				4069FD17222FC8F9002EC77A /* YZTDeviceStatusSource.h in Headers */,
 				4069FCE9222E5812002EC77A /* ALPHA_MBWebSocketServer.h in Headers */,
 				38614DF71DFEBD34001D3209 /* ALPHABonjourServer.h in Headers */,
 				407296722226AB4F005F06C5 /* NSBundle+Yzt.h in Headers */,
 				38614DEF1DFEBCEB001D3209 /* ALPHABonjourDataChunk.h in Headers */,
 				38614DFB1DFEBD45001D3209 /* NSScanner+Bonjour.h in Headers */,
+				4069FD13222FC8F9002EC77A /* YZT_ALPHAModel.h in Headers */,
 				38614DF31DFEBCFB001D3209 /* ALPHABonjourDataConnection.h in Headers */,
 				407296682226926A005F06C5 /* ALPHAInstanceSource.h in Headers */,
 			);
@@ -3333,6 +3365,7 @@
 				389CBEA21DEE044000D3F99C /* ALPHAFileManager.m in Sources */,
 				389CBE401DEE03D700D3F99C /* ALPHANetworkSource.m in Sources */,
 				389CBE6A1DEE040E00D3F99C /* ALPHATouchFingerView.m in Sources */,
+				4069FD16222FC8F9002EC77A /* YZT_ALPHAModel.m in Sources */,
 				389CBE271DEE03AF00D3F99C /* ALPHAGlobalPlugin.m in Sources */,
 				389CBE3C1DEE03D500D3F99C /* ALPHANetworkResponse.m in Sources */,
 				389CBE711DEE041800D3F99C /* ALPHAHierarchyTableViewController.m in Sources */,
@@ -3384,6 +3417,7 @@
 				389CBE361DEE03CB00D3F99C /* ALPHANetworkIcon.m in Sources */,
 				389CBE351DEE03C800D3F99C /* ALPHAKeychainPlugin.m in Sources */,
 				389CBE4F1DEE03F200D3F99C /* ALPHAPermission.m in Sources */,
+				4069FD12222FC8F9002EC77A /* YZTDeviceStatusSource.m in Sources */,
 				389CBE591DEE03F200D3F99C /* ALPHAMotionPermission.m in Sources */,
 				389CBE9C1DEE043D00D3F99C /* NSString+Random.m in Sources */,
 				4069FCF5222E5812002EC77A /* ALPHA_MBWebSocketServer.m in Sources */,
@@ -3524,6 +3558,7 @@
 				389CBE761DEE042000D3F99C /* ALPHAExplorerToolbar.m in Sources */,
 				389CBEA71DEE044200D3F99C /* ALPHACanvasView.m in Sources */,
 				389CBE7F1DEE042D00D3F99C /* ALPHAFieldRendererViewController.m in Sources */,
+				4069FD10222FC8F9002EC77A /* YZTPlugins.m in Sources */,
 				389CBE0E1DEE038600D3F99C /* ALPHAEnvironmentSource.m in Sources */,
 				389CBE211DEE03A900D3F99C /* ALPHAFileSource.m in Sources */,
 				389CBE841DEE042D00D3F99C /* ALPHAPropertyRendererViewController.m in Sources */,
@@ -3613,6 +3648,7 @@
 				407296742226AB4F005F06C5 /* NSBundle+Yzt.m in Sources */,
 				38DE4A4C1A0B7DB000EB447A /* AAPLNetworkViewController.m in Sources */,
 				535682BC18F3670300BAAD62 /* AAPLTextViewController.m in Sources */,
+				4069FD0F222FC8F9002EC77A /* YZTPlugins.m in Sources */,
 				535682B418F3670300BAAD62 /* AAPLPickerViewController.m in Sources */,
 				535682BE18F3670300BAAD62 /* AAPLWebViewController.m in Sources */,
 				535682BB18F3670300BAAD62 /* AAPLTextFieldViewController.m in Sources */,
@@ -3628,7 +3664,9 @@
 				535682B818F3670300BAAD62 /* AAPLSplitViewControllerDelegate.m in Sources */,
 				535682AC18F3670300BAAD62 /* AAPLCustomSearchBarViewController.m in Sources */,
 				535682A718F3670300BAAD62 /* AAPLActionSheetViewController.m in Sources */,
+				4069FD11222FC8F9002EC77A /* YZTDeviceStatusSource.m in Sources */,
 				5356824A18F3656900BAAD62 /* main.m in Sources */,
+				4069FD15222FC8F9002EC77A /* YZT_ALPHAModel.m in Sources */,
 				535682B118F3670300BAAD62 /* AAPLImageViewController.m in Sources */,
 				535682A918F3670300BAAD62 /* AAPLAlertViewController.m in Sources */,
 				535682B218F3670300BAAD62 /* AAPLMasterViewController.m in Sources */,

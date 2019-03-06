@@ -122,6 +122,12 @@
 		4069FCDF222E57DB002EC77A /* ALPHAWebSocketServerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCDA222E57DA002EC77A /* ALPHAWebSocketServerNode.m */; };
 		4069FCE0222E57DB002EC77A /* ALPHA_MBWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCDD222E57DA002EC77A /* ALPHA_MBWebSocketServer.m */; };
 		4069FCE1222E57DB002EC77A /* ALPHA_GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCDE222E57DA002EC77A /* ALPHA_GCDAsyncSocket.m */; };
+		4069FCFE222FBF30002EC77A /* YZTDeviceStatusSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FCFC222FBF30002EC77A /* YZTDeviceStatusSource.h */; };
+		4069FCFF222FBF31002EC77A /* YZTDeviceStatusSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FCFD222FBF30002EC77A /* YZTDeviceStatusSource.m */; };
+		4069FD02222FBFD7002EC77A /* YZT_ALPHAModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FD00222FBFD7002EC77A /* YZT_ALPHAModel.h */; };
+		4069FD03222FBFD7002EC77A /* YZT_ALPHAModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD01222FBFD7002EC77A /* YZT_ALPHAModel.m */; };
+		4069FD06222FC3B3002EC77A /* YZTPlugins.h in Headers */ = {isa = PBXBuildFile; fileRef = 4069FD04222FC3B3002EC77A /* YZTPlugins.h */; };
+		4069FD07222FC3B3002EC77A /* YZTPlugins.m in Sources */ = {isa = PBXBuildFile; fileRef = 4069FD05222FC3B3002EC77A /* YZTPlugins.m */; };
 		4417224BD28559CC04C0A3DC23468AA8 /* ALPHAScreenItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E31E29BD57EB639FE1C8AAD82BF1C /* ALPHAScreenItem.m */; };
 		445B0D369C472FF78C3BF058AF8DB00D /* ALPHAApplicationIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 91205D5CF38E50B14F5CF3C1FE206FD2 /* ALPHAApplicationIcon.m */; };
 		448CAB535A7E3FA3BBC74050FC134CF2 /* ALPHAExplorerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B2B93DFCAA2397AE827363FCB43AF5 /* ALPHAExplorerToolbar.m */; };
@@ -635,6 +641,12 @@
 		4069FCDC222E57DA002EC77A /* ALPHAWebSocketServerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALPHAWebSocketServerNode.h; sourceTree = "<group>"; };
 		4069FCDD222E57DA002EC77A /* ALPHA_MBWebSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHA_MBWebSocketServer.m; sourceTree = "<group>"; };
 		4069FCDE222E57DA002EC77A /* ALPHA_GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALPHA_GCDAsyncSocket.m; sourceTree = "<group>"; };
+		4069FCFC222FBF30002EC77A /* YZTDeviceStatusSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTDeviceStatusSource.h; sourceTree = "<group>"; };
+		4069FCFD222FBF30002EC77A /* YZTDeviceStatusSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTDeviceStatusSource.m; sourceTree = "<group>"; };
+		4069FD00222FBFD7002EC77A /* YZT_ALPHAModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZT_ALPHAModel.h; sourceTree = "<group>"; };
+		4069FD01222FBFD7002EC77A /* YZT_ALPHAModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZT_ALPHAModel.m; sourceTree = "<group>"; };
+		4069FD04222FC3B3002EC77A /* YZTPlugins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZTPlugins.h; sourceTree = "<group>"; };
+		4069FD05222FC3B3002EC77A /* YZTPlugins.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZTPlugins.m; sourceTree = "<group>"; };
 		407E769AD97BE1ABDC56C187CE6135EB /* ALPHAGlobalSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ALPHAGlobalSource.m; path = Alpha/Plugins/Global/Sources/ALPHAGlobalSource.m; sourceTree = "<group>"; };
 		40BC6F2387E5E7719F725B90EBF690B2 /* ALPHAVideoPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALPHAVideoPermission.h; path = Alpha/Plugins/Permission/Model/ALPHAVideoPermission.h; sourceTree = "<group>"; };
 		416FFAB4BCAF0CE68ACEBF9D12A97135 /* ALPHAHeapSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ALPHAHeapSource.h; path = Alpha/Plugins/Heap/Sources/ALPHAHeapSource.h; sourceTree = "<group>"; };
@@ -1300,6 +1312,7 @@
 		4069FCD8222E57DA002EC77A /* Model2 */ = {
 			isa = PBXGroup;
 			children = (
+				4069FCFB222FBEB2002EC77A /* Commands */,
 				4069FCD9222E57DA002EC77A /* ALPHA_MBWebSocketServer.h */,
 				4069FCDA222E57DA002EC77A /* ALPHAWebSocketServerNode.m */,
 				4069FCDB222E57DA002EC77A /* ALPHA_GCDAsyncSocket.h */,
@@ -1309,6 +1322,19 @@
 			);
 			name = Model2;
 			path = Alpha/Plugins/Server/Model2;
+			sourceTree = "<group>";
+		};
+		4069FCFB222FBEB2002EC77A /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				4069FCFC222FBF30002EC77A /* YZTDeviceStatusSource.h */,
+				4069FCFD222FBF30002EC77A /* YZTDeviceStatusSource.m */,
+				4069FD00222FBFD7002EC77A /* YZT_ALPHAModel.h */,
+				4069FD01222FBFD7002EC77A /* YZT_ALPHAModel.m */,
+				4069FD04222FC3B3002EC77A /* YZTPlugins.h */,
+				4069FD05222FC3B3002EC77A /* YZTPlugins.m */,
+			);
+			path = Commands;
 			sourceTree = "<group>";
 		};
 		4EDA45527D35823BBFE8D1CF8025C4AC /* Network */ = {
@@ -1915,6 +1941,7 @@
 				4BD423C19193F8ECD7F7EC656F3B93B3 /* ALPHAEventModel.h in Headers */,
 				6AEEFEA70E2E88D3A5CB3FA884FD698D /* ALPHAEventPermission.h in Headers */,
 				EDB8E46F94391B70525A7A4C348B416F /* ALPHAEventPlugin.h in Headers */,
+				4069FD02222FBFD7002EC77A /* YZT_ALPHAModel.h in Headers */,
 				D91252540E9D9467F0C0B1633DCDBA12 /* ALPHAEventSource.h in Headers */,
 				C26CCB371D737841ED8B5E2EBA9D3B15 /* ALPHAExplorerMenu.h in Headers */,
 				1DF9F308C159500E124CC935222EFA1B /* ALPHAExplorerToolbar.h in Headers */,
@@ -2057,6 +2084,7 @@
 				787149C15CC0D7A0642DFE9127CB1D89 /* ALPHAViewController.h in Headers */,
 				D7355F0063F290E6072FE0819EC9562F /* ALPHAViewHierarchyConverter.h in Headers */,
 				A29A425B8A9A97A9739386C6083A7F5F /* ALPHAViewHierarchyModel.h in Headers */,
+				4069FCFE222FBF30002EC77A /* YZTDeviceStatusSource.h in Headers */,
 				66A8466715A0F38FD7A4E805500FDA80 /* ALPHAViewHierarchyPlugin.h in Headers */,
 				23AB1F1E978F8354275F14D15DD58A13 /* ALPHAViewHierarchySource.h in Headers */,
 				0BF0E6FC16DA6325A08410627A3EDD2C /* ALPHAViewHierarchyViewController.h in Headers */,
@@ -2085,6 +2113,7 @@
 				EF6805E664D4D3904065DC896B018E31 /* UIApplication+Version.h in Headers */,
 				4C8AC918347CB1D02E53B85F21455555 /* UIColor+Tools.h in Headers */,
 				25421636AE887E011BAD03110D38005F /* UIColor+Utility.h in Headers */,
+				4069FD06222FC3B3002EC77A /* YZTPlugins.h in Headers */,
 				334FF2051AF1B3E05FF33C0FB90981F5 /* UIDevice+ALPHAStatus.h in Headers */,
 				62CBF62B59E8CACE91DD62CBB74E7957 /* UIDevice+DeviceInfo.h in Headers */,
 				D709922A444695493FCD045DEDD8A840 /* UIDevice+Hardware.h in Headers */,
@@ -2186,6 +2215,7 @@
 				39247D40027BEAE28423141D9892641A /* ALPHAApplicationEvent.m in Sources */,
 				445B0D369C472FF78C3BF058AF8DB00D /* ALPHAApplicationIcon.m in Sources */,
 				EDC916B2CC949F8D6541C764F2514AB4 /* ALPHAApplicationPlugin.m in Sources */,
+				4069FD07222FC3B3002EC77A /* YZTPlugins.m in Sources */,
 				A4945575164C87AA3BF8E24F42612C51 /* ALPHAApplicationSource.m in Sources */,
 				A8DBEE192D3A574C3DF232CD92D63EC6 /* ALPHAArgumentInputColorView.m in Sources */,
 				1DE3CFD8E6D72310A03A1F53B805940E /* ALPHAArgumentInputDateView.m in Sources */,
@@ -2291,6 +2321,7 @@
 				EB9764D6776E08055B9B3B3D19A6745A /* ALPHAModel.m in Sources */,
 				9A5542F591D050BD476CB7C3D1E57133 /* ALPHAMotionPermission.m in Sources */,
 				A988426A6DA725840FD751558DC9F038 /* ALPHAMoveIcon.m in Sources */,
+				4069FD03222FBFD7002EC77A /* YZT_ALPHAModel.m in Sources */,
 				97916D63D2B0435BF2406918C1BE0E1E /* ALPHAMultilineTableViewCell.m in Sources */,
 				987E34DD986ECF998143D63B3109882C /* ALPHANavigationController.m in Sources */,
 				69618C74E82C2741ED3275D7DF7AF422 /* ALPHANetworkConnection.m in Sources */,
@@ -2378,6 +2409,7 @@
 				01E1A5AA49E6EC0A10C7115696EC4EF6 /* ALPHAViewHierarchySource.m in Sources */,
 				24D56D734345C1A77EE2021430E2E578 /* ALPHAViewHierarchyViewController.m in Sources */,
 				704A8A2C29266A83A0E5122F9BEB567B /* ALPHAViewIcon.m in Sources */,
+				4069FCFF222FBF31002EC77A /* YZTDeviceStatusSource.m in Sources */,
 				1CCBF735DCF2C3101AD15E207695F966 /* ALPHAWebRendererViewController.m in Sources */,
 				5A9A8C1630BF1D630F9AB04A3E155CAC /* ALPHAWindow.m in Sources */,
 				34E1454B307D95D83CE45B7AB0C34607 /* NSArray+Class.m in Sources */,
